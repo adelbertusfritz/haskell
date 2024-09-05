@@ -2,15 +2,16 @@
 main :: IO ()
 main = do
     print(findPerimeter 1 2 3 4)
-    print(isRectangle 1 4 1 4)
+    print(isRectangle 1 1 1 1)
+    print(isRectangle 1 2 3 4)
     print(listSum [1, 2, 3, 4])
-    print(listSumPerimeter [(1,2,3,4), (1,2,3,4)])
+    print(listSumPerimeter [(1,2,3,4), (1,1,1,1)])
     print(reverseList [1,2,3,4])
     print(insertionSortMaxSideAsc [(1,1,1,5), (2,3,4,3), (1,2,2,2)])
     print(insertionSortPerimeterDesc [(1,1,1,5), (2,3,4,3), (1,2,2,2)])
-    print(filterEven [1,2,3,4])
-    print(filterRectangle [(1,2,3,4), (1,1,1,1)]) 
-    print(filterNotRectangle [(1,2,3,4), (1,1,1,1)])
+    print(filterEven [1,2,3,4,5,6])
+    print(filterRectangle [(1,1,1,1), (1,2,3,4), (2,2,2,2), (5,6,7,8), (9,10,11,12), (3,3,3,3)]) 
+    print(filterNotRectangle [(1,1,1,1), (1,2,3,4), (2,2,2,2), (5,6,7,8), (9,10,11,12), (3,3,3,3)])
  
 -- 1 findPerimeter
 
