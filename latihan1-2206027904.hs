@@ -45,7 +45,8 @@ findPerimeterFromTuple (a,b,c,d) = findPerimeter a b c d
 -- 5 reverseList
 
 reverseList :: [a] -> [a]
-reverseList = reverse
+reverseList [x] = [x]
+reverseList (x:xs) = reverseList xs ++ [x]
 
 -- 6 insertionSortMaxSideAsc
 
